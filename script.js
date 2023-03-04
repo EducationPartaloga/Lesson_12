@@ -45,4 +45,3 @@ function rgb(r, g, b){
 }
 
 console.log(rgb(255, 0, 124));
-
