@@ -17,13 +17,37 @@ function rgb(r, g, b){
     if (b > 255) r = 255
     if (b < 0) r = 0
 
+    let red, green, blue = ''
+
+    if (r < 16) {
+        red = '0' + r.toString(16)
+    }else{
+        red = r.toString(16)
+    }
+
+
+    if (g < 16) {
+        green = '0' + g.toString(16)
+    }else{
+        green = g.toString(16)
+    }
+
+    if (b < 16) {
+        blue = '0' + b.toString(16)
+    }else{
+        blue = b.toString(16)
+    }
+
+
     
 
-    return r.toString(16) + g.toString(16) + b.toString(16)
+
+
+
+    return red + green + blue
     
     
 }
 
-console.log(rgb(255, 100, 124));
+console.log(rgb(255, 0, 124));
 
-rgb (255, 0, 124)
