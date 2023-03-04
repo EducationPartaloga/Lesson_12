@@ -37,9 +37,9 @@ function rgb(r, g, b){
     }else{
         blue = b.toString(16)
     }
-    
 
-    return red + green + blue
+
+    return (red + green + blue).toUpperCase()
     
     
 }
